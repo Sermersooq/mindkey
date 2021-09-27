@@ -1,0 +1,145 @@
+@tailwind base;
+
+@tailwind components;
+
+.aspNetHidden {
+    display: none;
+}
+
+/* Index classes */
+.vacancyListTable {
+    @apply min-w-full divide-y divide-gray-200;
+}
+
+.vacancyListTable th {
+    @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.vacancyListTable td {
+    @apply px-6;
+}
+
+.vacancyListTable .odd {
+    @apply bg-white;
+}
+
+.vacancyListTable .even {
+    @apply bg-gray-50;
+}
+
+/* Application classes */
+.MindKey {
+    @apply m-auto container my-8;
+}
+
+.MindKey h2 {
+    @apply font-semibold text-blue-900 my-6 mx-8;
+}
+
+.MindKey .label {
+    @apply block text-sm font-medium text-gray-500;
+}
+
+.MindKey div {
+    @apply bg-white rounded my-6 mx-8 py-5;
+}
+
+.MindKey div div {
+    @apply my-0 py-1 flex flex-col relative;
+}
+
+.MindKey .mandatory {
+    @apply absolute inset-y-0 right-0 top-5 pr-3 flex items-center pointer-events-none;
+}
+
+.MindKey input {
+    @apply block w-full pl-2 pr-3 py-2 border-gray-300 border rounded placeholder-gray-300 text-sm;
+}
+
+.MindKey input[type=file] {
+    @apply text-center;
+}
+
+.MindKey select {
+    @apply block w-full px-3 py-2 border-gray-300 border rounded placeholder-gray-300 text-sm;
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image:
+            linear-gradient(45deg, black 50%, transparent 50%),
+            linear-gradient(135deg, transparent 50%, black 50%),
+            linear-gradient(to right, #ccc, #ccc);
+    background-position:
+            calc(100% - 15px) 1em,
+            calc(100% - 20px) 1em,
+            calc(100% - 2.5em) 0.5em;
+    background-size:
+            5px 5px,
+            5px 5px,
+            1px 1.5em;
+    background-repeat: no-repeat;
+    outline: 0;
+}
+
+.MindKey select + .mandatory {
+    @apply hidden;
+}
+
+.MindKey .datePanel {
+    @apply flex flex-row mx-0;
+}
+
+.MindKey .datePanel select {
+    @apply mx-2;
+}
+
+.MindKey .datePanel select:first-child {
+    @apply ml-0;
+}
+
+.MindKey .datePanel select:last-child {
+    @apply mr-0;
+}
+
+.MindKey .informationLabel {
+    @apply flex bg-blue-100 rounded;
+    padding: 30px 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 90%;
+}
+
+.MindKey .mindkeyCheckBox {
+    @apply flex bg-blue-100 rounded;
+    padding: 30px 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 90%;
+}
+
+.MindKey .mindkeyCheckBox label {
+    @apply w-5/6;
+    margin: 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+.MindKey .mindkeyCheckBox input {
+    @apply w-8 h-5 mx-4;
+    padding: 0;
+    margin-top: 4px;
+    vertical-align: top;
+    float: left;
+}
+
+
+body {
+    background: rgb(243, 244, 246);
+}
+
+@tailwind utilities;

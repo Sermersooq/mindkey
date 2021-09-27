@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^10.3.5",
+    "@code-bureau/tailwindcss-wp-typography": "Code-Bureau/tailwindcss-wp-typography.git",
+    "postcss": "^8.3.7",
+    "tailwindcss": "^2.2.15"
+  },
+  "scripts": {
+    "develop": "npx tailwindcss -i resources/css/sermersooq-mindkey.css -o public/css/sermersooq-mindkey.css",
+    "watch": "npx tailwindcss -i resources/css/sermersooq-mindkey.css -o public/css/sermersooq-mindkey.css --watch",
+    "prod": "NODE_ENV=production npx tailwindcss -i resources/css/sermersooq-mindkey.css -o public/css/sermersooq-mindkey.css",
+    "production": "npx run prod"
+  }
+}

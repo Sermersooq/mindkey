@@ -1,0 +1,4 @@
+# Build dependencies
+.idea
+node_modules
+public/css/*.css
