@@ -37,7 +37,7 @@
 }
 
 .MindKey .label {
-    @apply block text-sm font-medium text-gray-500;
+    @apply block text-base font-medium text-black;
 }
 
 .MindKey div {
@@ -86,6 +86,10 @@
     outline: 0;
 }
 
+.MindKey select:focus {
+    @apply border-blue-900;
+}
+
 .MindKey select + .mandatory {
     @apply hidden;
 }
@@ -107,7 +111,7 @@
 }
 
 .MindKey .mindkey-form-group {
-    @apply text-xl italic text-gray-500 border-b mt-4;
+    @apply text-sm italic text-gray-500 border-b mt-4;
 }
 
 .MindKey .informationLabel {
@@ -141,9 +145,21 @@
     float: left;
 }
 
+.MindKey .error {
+    @apply bg-red-600 p-4 text-white rounded;
+}
 
 body {
     background: rgb(243, 244, 246);
+}
+
+input:focus-visible {
+    @apply border-blue-900 shadow-sm;
+    outline: 0 none;
+}
+
+input[type=checkbox]:focus-within {
+    @apply border-blue-900 shadow-sm;
 }
 
 @tailwind utilities;

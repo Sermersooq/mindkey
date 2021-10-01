@@ -9,7 +9,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@code-bureau/tailwindcss-wp-typography')({
-    className: 'MindKey'
-  })],
+  plugins: [],
 }
