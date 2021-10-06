@@ -28,12 +28,16 @@
 }
 
 /* Application classes */
+#ContentPlaceHolderBody_Submit {
+    background-color: rgb(243, 244, 246);
+}
+
 .MindKey {
-    @apply m-auto container my-8;
+    @apply m-auto container my-8 mt-0;
 }
 
 .MindKey h2 {
-    @apply font-semibold text-blue-900 my-6 mx-8;
+    @apply font-semibold text-xl text-blue-900 pt-6 mx-8;
 }
 
 .MindKey .label {
@@ -150,7 +154,7 @@
 }
 
 body {
-    background: rgb(243, 244, 246);
+    background: white;
 }
 
 input:focus-visible {
