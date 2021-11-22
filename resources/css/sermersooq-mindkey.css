@@ -27,9 +27,53 @@
     @apply bg-gray-50;
 }
 
+/* Description classes */
+#ContentPlaceHolderBody_VacancyDetails {
+    background-color: rgb(243, 244, 246);
+    @apply py-8;
+}
+
+.vacancy_details {
+    @apply m-auto container my-8 bg-white rounded py-5;
+}
+
+.vacancy_details .vacancy_header {
+    @apply -mt-16 pb-16 font-semibold text-xl text-blue-900;
+}
+
+.vacancy_details p {
+    @apply mx-8;
+}
+
+.vacancy_details ul {
+    @apply mx-8;
+}
+
+.vacancy_details .csAD7A2888 {
+    @apply py-2;
+}
+
+.vacancy_details .csB328979B {
+    @apply font-semibold mb-4;
+}
+
+.vacancy_details .cs16C35735 {
+
+}
+
+.vacancy_details .lineHeading {
+    @apply mx-8;
+}
+
+.vacancy_details .applyForJobButton {
+    background-color: rgb(243, 244, 246);
+    @apply inline-flex items-center px-5 my-4 py-2 border text-blue-800 border-blue-800 shadow-sm text-base font-medium rounded-sm hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white mr-2;
+}
+
 /* Application classes */
 #ContentPlaceHolderBody_Submit {
     background-color: rgb(243, 244, 246);
+
 }
 
 .MindKey {
